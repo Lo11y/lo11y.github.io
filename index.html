@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ToDoList — личный список задач и чтение основного Google Calendar через Telegram.">
+  <title>ToDoList — задачи и календарь</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">К содержимому</a>
+  <header><a class="brand" href="index.html">ToDoList</a><nav aria-label="Страницы"><a href="index.html" aria-current="page">О приложении</a><a href="privacy.html">Конфиденциальность</a><a href="terms.html">Условия</a></nav></header>
+  <main id="main">
+    <div class="eyebrow">Личный инструмент</div>
+    <h1>Задачи и расписание<br>в одном рабочем процессе.</h1>
+    <p class="intro">ToDoList помогает вести список задач и просматривать основной Google Calendar в личном чате Telegram.</p>
+    <section aria-labelledby="tasks"><h2 id="tasks">Список задач</h2><p>Консольное приложение позволяет добавлять задачи, просматривать список, отмечать выполнение и удалять записи. Изменения сохраняются в базе задач после каждой операции.</p></section>
+    <section aria-labelledby="calendar"><h2 id="calendar">Google Calendar</h2><p>После подключения Google-аккаунта календарные команды показывают расписание:</p><ul><li><code>/today</code> — сегодня;</li><li><code>/tomorrow</code> — завтра;</li><li><code>/week</code> — сегодня и следующие шесть дней.</li></ul><p>Используются основной календарь и часовой пояс Москвы. События запрашиваются при обращении к боту; в ответе отображаются название, дата и время. Подключение календаря требует настройки владельцем приложения.</p></section>
+    <aside class="note"><p><strong>Доступ только для чтения.</strong> Приложение запрашивает разрешение <code>calendar.events.owned.readonly</code> для календарей, которыми владеет подключённый аккаунт. ToDoList использует основной календарь; создание, изменение и удаление событий Google этим разрешением не предоставляются.</p></aside>
+    <section aria-labelledby="access"><h2 id="access">Личный доступ</h2><p>Бот отвечает заданному владельцу в личном чате. Разрешение Google выдаётся через официальный экран согласия и может быть отозвано в настройках аккаунта.</p><p>Подробности обработки данных: <a href="privacy.html">политика конфиденциальности</a>. Порядок использования: <a href="terms.html">условия</a>.</p></section>
+    <section aria-labelledby="contact"><h2 id="contact">Владелец проекта</h2><p>Проект поддерживает <a href="https://github.com/Lo11y">Lo11y на GitHub</a>. Для вопросов о доступе можно также использовать адрес поддержки, указанный на экране согласия Google.</p></section>
+  </main>
+  <footer><p>ToDoList · Личные задачи и календарь</p></footer>
+</body>
+</html>
